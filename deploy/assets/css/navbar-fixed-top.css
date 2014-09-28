@@ -1,11 +1,19 @@
 body {
-  min-height: 2000px;
+  min-height: 1000px;
   padding-top: 70px;
 }
 .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
+.columns {
+  text-align: left;
+}
 .jumbo_center {
 	text-align: center;
+}
+
+.grayed_out {
+    //background-color: #ccc;
+    opacity: .1;
 }

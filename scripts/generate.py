@@ -5,7 +5,7 @@ import datetime
 from jinja2 import Environment, FileSystemLoader
 
 #TMPL_FILES = ['index.html', 'resources.html', 'schedule.html', 'papers.html']
-TMPL_FILES = ['index.html','syllabus.html','policies.html','mentors.html','resources.html', 'faq.html', 'alumni.html','students.html']
+TMPL_FILES = ['index.html','syllabus.html','policies.html','mentors.html','resources.html', 'faq.html', 'alumni.html','students.html','teacherassistants.html']
 TMPL_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '../templates'))
 OUTPUT_PATH = os.path.realpath(os.path.join(TMPL_DIR, '../deploy'))
 

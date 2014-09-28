@@ -31,17 +31,19 @@
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 
-        {% set nav_bar_elems = [
-        ('syllabus.html', 'syllabus', 'Syllabus'),
-        ('policies.html', 'policies', 'Policies'),
-        ('mentors.html', 'mentors', 'Mentors'),
-        ('resources.html', 'resources', 'Resources'),
-        ('alumni.html', 'alumni', 'Alumni Companies'),
-        ('faq.html', 'faq', 'FAQ'),
-        ] -%}
-        {% for url, name, title in nav_bar_elems %}
-        <li {% if name==page_name %}class="active"{% endif%}><a href="{{ url|e }}">{{title|e}}</a></li>
-        {% endfor %}
+        
+        <li ><a href="syllabus.html">Syllabus</a></li>
+        
+        <li ><a href="policies.html">Policies</a></li>
+        
+        <li ><a href="mentors.html">Mentors</a></li>
+        
+        <li ><a href="resources.html">Resources</a></li>
+        
+        <li ><a href="alumni.html">Alumni Companies</a></li>
+        
+        <li ><a href="faq.html">FAQ</a></li>
+        
 
             <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -69,7 +71,11 @@
 
       <!-- Main component for a primary marketing message or call to action -->
 
-      {% block JumbotronContents %}{% endblock %}
+      
+    <div class="jumbotron jumbo_center">
+      <h3>Please feel free to email us for any questions or concerns about the course!</h3> 
+    </div>
+
 
         <!--<h1>Navbar example</h1>
         <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
@@ -78,7 +84,38 @@
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>-->
 
-        {% block PageContents %}{% endblock %}
+        
+
+<div class="row">
+  
+  <div class="col-lg-4">
+     <img class="img-circle" src="assets/img/TAs/michael-heinrich.jpg" style="width: 130px; height: 140px;">
+    <h2>Michael Heinrich</h2>
+    <p><strong>MS&E Masters<br> 
+        Stanford University</strong><br> 
+        mheinrich@gmail.com</p>
+
+        <p class="columns"> Michael is dedicating his time to making the world sustainable. Michael helped scale StartupDigest until their acquisition by StartupWeekend. Prior Michael joined Bridgewater Associates, a $150B hedge fund in Westport, CT. Beforehand, he was a management consultant at Bain and Company in San Francisco, working with clients ranging from medium sized to Fortune 500 businesses in the technology, consumer retail, and financial services sectors. He also worked in a product management capacity at SAP and Microsoft, helping shape the strategic vision of xApps Duet as well as MSDN academic alliance and ImagineCup (the world's premier student technology competition).</p>
+
+		<p class="columns">Specialties: Entrepreneurship, growth strategy, new ventures, organization, idea generation, business development, performance improvement</p>
+
+   
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="img-circle" src="assets/img/TAs/Francois_Chaubard.png" style="width: 130px; height: 140px;">
+    <h2>Francois Chaubard</h2>
+    <p><strong>EE Masters <br> 
+      Stanford University</strong><br> 
+        fchaubar@stanford.edu</p>
+
+      <p class="columns"><strong>Background:</strong> Undergrad ME at University of Delaware. Lockheed Martin Engineering Leadership Development Program for 3 years. Now 2nd yr EE Masters at Stanford. Performing research in the Computer Vision and Geometry Lab in CS Department. </p>
+      <p class="columns"><strong>Area of Interest:</strong>  Machine Learning, Computer Vision, and mobile development </p>
+
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+
+
 
       </div> <!-- /container -->
 
@@ -94,7 +131,7 @@
         <a href="http://www.stanford.edu"> Stanford University </a>
       
         <br />
-        Last updated on {{last_modified.strftime('%A, %B %d %Y')}}.
+        Last updated on Sunday, September 28 2014.
       </div>
     </body>
     </html>
